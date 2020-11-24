@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <parameter name="password" value="Jira@123"/>
+  <parameter name="baseurl" value="http://10.210.21.211:8080/Voyager-8.2.0/signIn.jsp"/>
+  <parameter name="username" value="suraju"/>
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="ParallelTestExecutionForClassTestsMethods.NewTestBrowser">
+        <methods>
+          <include name="verifyPageTitle" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ParallelTestExecutionForClassTestsMethods.NewTestBrowser -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
